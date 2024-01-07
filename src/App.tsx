@@ -1,12 +1,13 @@
 
+import { useState } from 'react'
 import UseStateExample from './pages/UseStateExample'
 
 function App() {
- 
+  const [counter,setCouter]= useState(0)
 
   return (
     <div>
-      <UseStateExample/>
+      <UseStateExample counter={counter} setCounter={setCouter}/>
     </div>
   )
 }
